@@ -29,6 +29,12 @@ public class WeatherFragment extends Fragment {
     private TextView updatedField;
 	private TextView currentTemperatureField;
 	private TextView detailsField;
+
+	private TextView tv_temperature;
+	private TextView tv_min_temp;
+	private TextView tv_max_temp;
+	private TextView tv_day;
+
      
     Handler handler;
  
@@ -45,8 +51,13 @@ public class WeatherFragment extends Fragment {
         currentTemperatureField = (TextView)rootView.findViewById(R.id.current_temperature_field);
         weatherIcon = (TextView)rootView.findViewById(R.id.weather_icon);
 		detailsField = (TextView)rootView.findViewById(R.id.details_field);
-         
-        weatherIcon.setTypeface(weatherFont);
+		weatherIcon.setTypeface(weatherFont);
+
+		tv_temperature = (TextView)rootView.findViewById(R.id.tv_temperature);
+		tv_min_temp = (TextView)rootView.findViewById(R.id.tv_min_temp);
+		tv_max_temp = (TextView)rootView.findViewById(R.id.tv_max_temp);
+		tv_day = (TextView)rootView.findViewById(R.id.tv_day);
+
         return rootView; 
     }
 
@@ -110,6 +121,12 @@ public class WeatherFragment extends Fragment {
 	        setWeatherIcon(details.getInt("id"),
 	                json.getJSONObject("sys").getLong("sunrise") * 1000,
 	                json.getJSONObject("sys").getLong("sunset") * 1000);
+
+			tv_temperature.setText(String.format("%.2f", main.getDouble("temp"))+ " ℃");
+			tv_min_temp.setText(String.format("%.2f", main.getDouble("temp_min"))+ " ℃");
+			tv_max_temp.setText(String.format("%.2f", main.getDouble("temp_max"))+ " ℃");
+			tv_day.setText(updatedOn);
+
 	    }catch(Exception e){
 	        Log.e("SimpleWeather", "Field not present in JSON Received");
 	    }
