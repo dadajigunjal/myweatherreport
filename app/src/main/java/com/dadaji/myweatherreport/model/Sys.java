@@ -1,4 +1,4 @@
-package com.dinesh.myweatherreport.model;
+package com.dadaji.myweatherreport.model;
 
 import java.io.Serializable;
 

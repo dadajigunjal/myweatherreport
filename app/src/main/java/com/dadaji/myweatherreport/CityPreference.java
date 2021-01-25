@@ -1,4 +1,4 @@
-package com.dinesh.myweatherreport;
+package com.dadaji.myweatherreport;
 
 import android.app.Activity;
 import android.content.SharedPreferences;

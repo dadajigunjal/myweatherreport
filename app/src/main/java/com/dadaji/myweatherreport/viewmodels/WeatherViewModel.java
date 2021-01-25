@@ -1,10 +1,10 @@
-package com.dinesh.myweatherreport.viewmodels;
+package com.dadaji.myweatherreport.viewmodels;
 
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
 
-import com.dinesh.myweatherreport.BR;
-import com.dinesh.myweatherreport.model.WeatherModel;
+import com.dadaji.myweatherreport.BR;
+import com.dadaji.myweatherreport.model.WeatherModel;
 
 public class WeatherViewModel extends BaseObservable {
     private WeatherModel weatherModel;

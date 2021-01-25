@@ -1,4 +1,4 @@
-package com.dinesh.myweatherreport;
+package com.dadaji.myweatherreport;
 
 import android.content.Context;
 

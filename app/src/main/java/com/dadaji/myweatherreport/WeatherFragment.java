@@ -1,4 +1,4 @@
-package com.dinesh.myweatherreport;
+package com.dadaji.myweatherreport;
 
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
@@ -17,10 +17,10 @@ import android.widget.Toast;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
-import com.dinesh.myweatherreport.apimanager.RemoteFetch;
-import com.dinesh.myweatherreport.databinding.FragmentWeatherBinding;
-import com.dinesh.myweatherreport.model.WeatherModel;
-import com.dinesh.myweatherreport.viewmodels.WeatherViewModel;
+import com.dadaji.myweatherreport.apimanager.RemoteFetch;
+import com.dadaji.myweatherreport.databinding.FragmentWeatherBinding;
+import com.dadaji.myweatherreport.model.WeatherModel;
+import com.dadaji.myweatherreport.viewmodels.WeatherViewModel;
 import com.google.gson.Gson;
 
 import org.json.JSONObject;

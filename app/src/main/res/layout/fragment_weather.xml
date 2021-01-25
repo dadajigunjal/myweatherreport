@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.dinesh.myweatherreport.viewmodels.WeatherViewModel" />
+            type="com.dadaji.myweatherreport.viewmodels.WeatherViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

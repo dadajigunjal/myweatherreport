@@ -1,8 +1,8 @@
-package com.dinesh.myweatherreport.apimanager;
+package com.dadaji.myweatherreport.apimanager;
 
 import android.content.Context;
 
-import com.dinesh.myweatherreport.R;
+import com.dadaji.myweatherreport.R;
 
 import org.json.JSONObject;
 

@@ -1,4 +1,4 @@
-package com.dinesh.myweatherreport;
+package com.dadaji.myweatherreport;
 
 import androidx.appcompat.app.AppCompatActivity;
 
