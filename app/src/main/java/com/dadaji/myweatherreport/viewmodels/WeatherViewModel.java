@@ -27,4 +27,34 @@ public class WeatherViewModel extends BaseObservable {
         weatherModel.main.setTemp_min(temp_min);
         notifyPropertyChanged(BR.temp_min);
     }
+
+    @Bindable
+    public String getTemp_max(){
+        try {
+            return String.valueOf(weatherModel.getMain().getTemp_max());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+    public void setTemp_max(Double temp_max) {
+        weatherModel.main.setTemp_max(temp_max);
+        notifyPropertyChanged(BR.temp_max);
+    }
+
+    @Bindable
+    public String getTemp(){
+        try {
+            return String.valueOf(weatherModel.getMain().getTemp());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+    public void setTemp(Double temp) {
+        weatherModel.main.setTemp(temp);
+        notifyPropertyChanged(BR.temp);
+    }
 }
